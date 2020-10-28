@@ -20,6 +20,8 @@
             android:orientation="vertical"
             android:gravity="start">
 
+            hola
+
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="272dp"
