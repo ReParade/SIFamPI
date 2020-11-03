@@ -21,6 +21,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import com.google.firebase.firestore.DocumentSnapshot;
+
 public class MainActivity extends AppCompatActivity {
 
     Spinner opciones;
@@ -46,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter < CharSequence > adapter = ArrayAdapter.createFromResource(this, R.array.opciones, R.layout.spinner);
         opciones.setAdapter(adapter);
-
 
         //Darle la funcionalidad al boton para que incie sesion
         Mbutton.setOnClickListener(new View.OnClickListener() {
@@ -99,5 +100,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }//Fin del onCreate
+
 
 }//MainActivity
