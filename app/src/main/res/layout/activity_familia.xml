@@ -36,8 +36,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="#FFFFFF"
-                android:hint="Num. de Registro: 1707092"
                 android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#000000"
                 android:layout_marginTop="-60dp"/>
 
             <LinearLayout
@@ -70,9 +71,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:hint="Silcia Berenice Cepeda Ruiz"
                         android:ems="8"
                         android:textSize="20sp"
+                        android:textColor="#000000"
                         android:gravity="center"/>
 
                 </LinearLayout>
@@ -99,7 +100,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:hint="20"
+                        android:textColor="#000000"
                         android:ems="8"
                         android:textSize="20sp"
                         android:gravity="center"/>
@@ -128,7 +129,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:hint="Mujer"
+                        android:textColor="#000000"
                         android:ems="8"
                         android:textSize="20sp"
                         android:gravity="center"/>
@@ -157,8 +158,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:hint="Ninguna"
                         android:ems="8"
+                        android:textColor="#000000"
                         android:textSize="20sp"
                         android:gravity="center"/>
 
@@ -186,7 +187,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:hint="Dr. Cepeda"
+                        android:textColor="#000000"
                         android:ems="8"
                         android:textSize="20sp"
                         android:gravity="center"/>
@@ -215,8 +216,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:hint="Neumologia"
                         android:ems="8"
+                        android:textColor="#000000"
                         android:textSize="20sp"
                         android:gravity="center"/>
 
@@ -244,7 +245,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:hint="6"
+                        android:textColor="#000000"
                         android:ems="8"
                         android:textSize="20sp"
                         android:gravity="center"/>
@@ -273,8 +274,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:hint="100"
                         android:ems="8"
+                        android:textColor="#000000"
                         android:textSize="20sp"
                         android:gravity="center"/>
 
@@ -304,8 +305,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:hint="dd-mm-yyyy"
                         android:ems="8"
+                        android:textColor="#000000"
                         android:textSize="20sp"
                         android:gravity="center"/>
 
@@ -332,7 +333,7 @@
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:hint="Estable"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:gravity="center"/>
 
@@ -353,7 +354,7 @@
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:hint="No se necesita familiar 27/7"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:gravity="center"/>
 

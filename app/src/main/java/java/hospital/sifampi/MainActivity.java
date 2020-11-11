@@ -3,6 +3,7 @@ package java.hospital.sifampi;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -23,7 +24,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText Ecorreo, Econtra;
+    EditText Ecorreo, Econtra, Eclave;
     Button Mbutton;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         Ecorreo = findViewById(R.id.correo);
         Econtra = findViewById(R.id.contra);
+        Eclave = findViewById(R.id.clave);
         progressBar = findViewById(R.id.progressBar);
         Mbutton = findViewById(R.id.button);
         fAuth = FirebaseAuth.getInstance();
@@ -80,6 +82,18 @@ public class MainActivity extends AppCompatActivity {
 
 
     }//Fin del onCreate
+
+    //No cerrar la sesion
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        if (fAuth.getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(), Familia.class));
+            finish();
+        }
+
+    }
 
 
 }//MainActivity
