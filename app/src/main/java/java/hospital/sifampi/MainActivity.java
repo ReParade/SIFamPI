@@ -24,7 +24,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText Ecorreo, Econtra, Eclave;
+    EditText Ecorreo, Econtra;
     Button Mbutton;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         Ecorreo = findViewById(R.id.correo);
         Econtra = findViewById(R.id.contra);
-        Eclave = findViewById(R.id.clave);
         progressBar = findViewById(R.id.progressBar);
         Mbutton = findViewById(R.id.button);
         fAuth = FirebaseAuth.getInstance();

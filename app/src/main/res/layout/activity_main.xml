@@ -66,18 +66,6 @@
                 android:hint="Contraseña"
                 android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/clave"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                android:ems="10"
-                android:textSize="20sp"
-                android:background="#FFFFFF"
-                android:hint="Numero de Registro"
-                android:inputType="textPersonName" />
-
             <Button
                 android:id="@+id/button"
                 android:layout_width="250dp"
