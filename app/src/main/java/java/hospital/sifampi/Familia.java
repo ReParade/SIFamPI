@@ -1,5 +1,6 @@
 package java.hospital.sifampi;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,7 +13,9 @@ import android.widget.TextView;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class Familia extends AppCompatActivity {
 
@@ -89,9 +92,10 @@ public class Familia extends AppCompatActivity {
     private void obtenerdatos(){
         userID = fAuth.getCurrentUser().getUid();
 
-        fStore.collection("Pacientes").document(userID).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+        fStore.collection("Pacientes").document(userID).addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
-            public void onSuccess(DocumentSnapshot documentSnapshot) {
+            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
+
                 String id = documentSnapshot.getString("id");
                 String paciente = documentSnapshot.getString("Nombre");
                 String Edad = documentSnapshot.getString("Edad");
