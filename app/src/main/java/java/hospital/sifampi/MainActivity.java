@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(new Intent(getApplicationContext(), Familia.class));
 
                         }else{
-                            Toast.makeText(MainActivity.this, "Contraseña o correo incorrecto", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Contraseña o correo incorrecto", Toast.LENGTH_LONG).show();
                             progressBar.setVisibility(View.GONE);
                         }
                     }
