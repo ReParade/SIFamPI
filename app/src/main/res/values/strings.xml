@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">SIFamPI</string>
+
+
+    <string name="descripcion_elemento">Validor para el contentDescription de los componentes, quitar en caso de ocupar
+        personalizarlo</string>
+
+    <string name="text_familiar">Familiar</string>
+
+    <string name="hint_correoElectronico">Correo electrónico</string>
+    <string name="hint_contraseña">Contraseña</string>
+
+    <string name="button_ingresar">INGRESAR</string>
+
+
+    <string name="text_paciente">Paciente:</string>
+    <string name="text_edad">Edad:</string>
+    <string name="text_sexo">Sexo:</string>
+    <string name="text_alergias">Alergias:</string>
+    <string name="text_doctor">Doctor:</string>
+    <string name="text_especialidad">Especialidad:</string>
+    <string name="text_piso">No. de piso:</string>
+    <string name="text_cama">No. de cama:</string>
+    <string name="text_ingreso">Fecha de ingreso:</string>
+    <string name="text_estadoPaciente">Estado del paciente</string>
+    <string name="text_avisos">Avisso</string>
+
+
+
 </resources>

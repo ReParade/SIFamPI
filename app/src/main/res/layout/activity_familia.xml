@@ -26,6 +26,7 @@
                 android:layout_height="267dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="-75dp"
+                android:contentDescription="@string/descripcion_elemento"
                 app:srcCompat="@drawable/sifampi"
                 tools:layout_editor_absoluteX="69dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -55,16 +56,19 @@
                     android:orientation="horizontal"
                     android:layout_gravity="start"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
-                        android:background="#0E9909"
-                        android:text="Paciente: "
-                        android:textSize="20sp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginRight="15dp"
-                        android:gravity="center"/>
+                        android:background="#0A9777"
+                        android:gravity="center"
+                        android:text="@string/text_paciente"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/Paciente"
@@ -84,16 +88,19 @@
                     android:orientation="horizontal"
                     android:layout_gravity="start"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
-                        android:background="#0E9909"
-                        android:text="Edad: "
-                        android:textSize="20sp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginRight="15dp"
-                        android:gravity="center"/>
+                        android:background="#0A9777"
+                        android:gravity="center"
+                        android:text="@string/text_edad"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/Edad"
@@ -113,16 +120,19 @@
                     android:orientation="horizontal"
                     android:layout_gravity="start"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
-                        android:background="#0E9909"
-                        android:text="Genero: "
-                        android:textSize="20sp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginRight="15dp"
-                        android:gravity="center"/>
+                        android:background="#0A9777"
+                        android:gravity="center"
+                        android:text="@string/text_sexo"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/Genero"
@@ -142,16 +152,19 @@
                     android:orientation="horizontal"
                     android:layout_gravity="start"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
-                        android:background="#0E9909"
-                        android:text="Alergias: "
-                        android:textSize="20sp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginRight="15dp"
-                        android:gravity="center"/>
+                        android:background="#0A9777"
+                        android:gravity="center"
+                        android:text="@string/text_alergias"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/Alergias"
@@ -171,16 +184,19 @@
                     android:orientation="horizontal"
                     android:layout_gravity="start"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
-                        android:background="#0E9909"
-                        android:text="Doctor: "
-                        android:textSize="20sp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginRight="15dp"
-                        android:gravity="center"/>
+                        android:background="#0A9777"
+                        android:gravity="center"
+                        android:text="@string/text_doctor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/Doctor"
@@ -200,16 +216,19 @@
                     android:orientation="horizontal"
                     android:layout_gravity="start"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
-                        android:background="#0E9909"
-                        android:text="Espacialidad: "
-                        android:textSize="20sp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginRight="15dp"
-                        android:gravity="center"/>
+                        android:background="#0A9777"
+                        android:gravity="center"
+                        android:text="@string/text_especialidad"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/Especialidad"
@@ -229,16 +248,19 @@
                     android:orientation="horizontal"
                     android:layout_gravity="start"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
-                        android:background="#0E9909"
-                        android:text="No. Piso: "
-                        android:textSize="20sp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginRight="15dp"
-                        android:gravity="center"/>
+                        android:background="#0A9777"
+                        android:gravity="center"
+                        android:text="@string/text_piso"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/Piso"
@@ -258,16 +280,19 @@
                     android:orientation="horizontal"
                     android:layout_gravity="start"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp">
 
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
-                        android:background="#0E9909"
-                        android:text="No. Cama: "
-                        android:textSize="20sp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginRight="15dp"
-                        android:gravity="center"/>
+                        android:background="#0A9777"
+                        android:gravity="center"
+                        android:text="@string/text_cama"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/Cama"
@@ -294,11 +319,13 @@
                     <TextView
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"
-                        android:background="#0E9909"
-                        android:text="Fecha de Ingreso: "
-                        android:textSize="20sp"
+                        android:layout_marginEnd="15dp"
                         android:layout_marginRight="15dp"
-                        android:gravity="center"/>
+                        android:background="#0A9777"
+                        android:gravity="center"
+                        android:text="@string/text_ingreso"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/Ingreso"
@@ -320,13 +347,13 @@
                 android:id="@+id/textp1"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
-                android:background="#7C8688"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                android:text="Estado del paceinte"
+                android:layout_marginTop="20dp"
+                android:background="#7C8688"
+                android:gravity="center"
+                android:text="@string/text_estadoPaciente"
                 android:textColor="#000000"
-                android:textSize="25sp"
-                android:gravity="center"/>
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/Estado"
@@ -341,13 +368,13 @@
                 android:id="@+id/textp2"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
-                android:background="#7C8688"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                android:text="Avisos"
+                android:layout_marginTop="20dp"
+                android:background="#7C8688"
+                android:gravity="center"
+                android:text="@string/text_avisos"
                 android:textColor="#000000"
-                android:textSize="25sp"
-                android:gravity="center"/>
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/Avisos"
