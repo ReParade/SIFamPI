@@ -19,6 +19,8 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class Familia extends AppCompatActivity {
 
+    Bundle datos;
+
     TextView NumRegistro;
     TextView NomPaciente;
     TextView edad;
@@ -65,34 +67,12 @@ public class Familia extends AppCompatActivity {
 
 
 
-    public void logout() {
-        FirebaseAuth.getInstance().signOut();//logout
-        startActivity(new Intent(getApplicationContext(),MainActivity.class));
-        finish();
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        MenuInflater menuInflate = getMenuInflater();
-        menuInflate.inflate(R.menu.menu,menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
-            case R.id.cerrar:
-                logout();
-                return true;
-            default:return super.onOptionsItemSelected(item);
-        }
-    }
-
-
     private void obtenerdatos(){
+        datos = getIntent().getExtras();
+        String base = datos.getString("pacientesid");
         userID = fAuth.getCurrentUser().getUid();
 
-        fStore.collection("Pacientes").document(userID).addSnapshotListener(new EventListener<DocumentSnapshot>() {
+        fStore.collection("Pacientes").document(userID).collection("Internados").document(base).addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
 

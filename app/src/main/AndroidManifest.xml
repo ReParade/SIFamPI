@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".MostrarLista"
+            android:exported="false" />
+        <activity
             android:name=".Familia"
             android:screenOrientation="portrait" />
         <activity android:name=".MainActivity">

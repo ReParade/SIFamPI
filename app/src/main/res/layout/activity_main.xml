@@ -26,7 +26,6 @@
                 android:layout_height="267dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="-40dp"
-                android:contentDescription="@string/descripcion_elemento"
                 app:srcCompat="@drawable/sifampi"
                 tools:layout_editor_absoluteX="69dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -36,45 +35,45 @@
                 android:layout_width="250dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="-20dp"
-                android:background="#0bb791"
-                android:gravity="center"
-                android:text="@string/text_familiar"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:text="Familiar"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="-20dp"
+                android:background="#0bb791"/>
 
             <EditText
                 android:id="@+id/correo"
                 android:layout_width="250dp"
                 android:layout_height="40dp"
-                android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:background="#FFFFFF"
+                android:layout_gravity="center"
                 android:ems="10"
-                android:hint="@string/hint_correoElectronico"
-                android:inputType="textEmailAddress"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="#FFFFFF"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress" />
 
             <EditText
                 android:id="@+id/contra"
                 android:layout_width="250dp"
                 android:layout_height="40dp"
-                android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:background="#FFFFFF"
+                android:layout_gravity="center"
                 android:ems="10"
-                android:hint="@string/hint_contraseña"
-                android:inputType="textPersonName"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="#FFFFFF"
+                android:hint="Contraseña"
+                android:inputType="textPersonName" />
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="210dp"
+                android:layout_width="250dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:background="#463F3F"
-                android:text="@string/button_ingresar"
+                android:text="Ingresar"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
