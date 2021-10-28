@@ -23,7 +23,7 @@
     <string name="text_cama">No. de cama:</string>
     <string name="text_ingreso">Fecha de ingreso:</string>
     <string name="text_estadoPaciente">Estado del paciente</string>
-    <string name="text_avisos">Avisso</string>
+    <string name="text_avisos">Avisos</string>
 
 
 </resources>

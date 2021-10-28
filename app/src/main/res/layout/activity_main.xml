@@ -64,7 +64,7 @@
                 android:textSize="20sp"
                 android:background="#FFFFFF"
                 android:hint="Contraseña"
-                android:inputType="textPersonName" />
+                android:inputType="textPassword" />
 
             <Button
                 android:id="@+id/button"

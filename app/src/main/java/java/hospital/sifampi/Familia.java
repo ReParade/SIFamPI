@@ -24,9 +24,7 @@ public class Familia extends AppCompatActivity {
     TextView NumRegistro;
     TextView NomPaciente;
     TextView edad;
-    TextView alergias;
     TextView NomDoc;
-    TextView especial;
     TextView NoPiso;
     TextView NoCama;
     TextView estado;
@@ -48,9 +46,7 @@ public class Familia extends AppCompatActivity {
         NumRegistro = findViewById(R.id.ID);
         NomPaciente = findViewById(R.id.Paciente);
         edad = findViewById(R.id.Edad);
-        alergias = findViewById(R.id.Alergias);
         NomDoc = findViewById(R.id.Doctor);
-        especial = findViewById(R.id.Especialidad);
         NoPiso = findViewById(R.id.Piso);
         NoCama = findViewById(R.id.Cama);
         estado = findViewById(R.id.Estado);
@@ -79,9 +75,7 @@ public class Familia extends AppCompatActivity {
                 String id = documentSnapshot.getString("id");
                 String paciente = documentSnapshot.getString("Nombre");
                 String Edad = documentSnapshot.getString("Edad");
-                String alergia = documentSnapshot.getString("Alergias");
                 String doctor = documentSnapshot.getString("Doctor");
-                String especialidad = documentSnapshot.getString("Especialidad");
                 String piso = documentSnapshot.getString("Piso");
                 String cama = documentSnapshot.getString("Cama");
                 String Estado = documentSnapshot.getString("Estado");
@@ -93,9 +87,7 @@ public class Familia extends AppCompatActivity {
                 NomPaciente.setText(paciente);
                 edad.setText(Edad);
                 genero.setText(select);
-                alergias.setText(alergia);
                 NomDoc.setText(doctor);
-                especial.setText(especialidad);
                 NoPiso.setText(piso);
                 NoCama.setText(cama);
                 estado.setText(Estado);

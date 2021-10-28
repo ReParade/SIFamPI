@@ -3,15 +3,15 @@ package java.hospital.sifampi;
 public class contenido_lista {
 
     private String Nombre;
-    private String id;
+    private String Estado;
 
     public contenido_lista() {
 
     }
 
-    public contenido_lista(String Nombre, String id){
+    public contenido_lista(String Nombre, String Estado){
         this.Nombre = Nombre;
-        this.id = id;
+        this.Estado = Estado;
     }
 
     public String getNombre() {
@@ -22,8 +22,8 @@ public class contenido_lista {
         Nombre = nombre;
     }*/
 
-    public String getID() {
-        return id;
+    public String getEstado() {
+        return Estado;
     }
 
  /*   public void setid(String id) {

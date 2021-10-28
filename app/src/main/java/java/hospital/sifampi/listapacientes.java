@@ -45,7 +45,7 @@ public class listapacientes extends FirestoreRecyclerAdapter<contenido_lista, li
         final String id = PacienteListas.getId();
 
         holder.txtNombre.setText(articulo.getNombre());
-        holder.txtID.setText(articulo.getID());
+        holder.txtEstado.setText(articulo.getEstado());
 
         //Ver Paciente
         holder.buttonVer.setOnClickListener(new View.OnClickListener() {
@@ -74,20 +74,18 @@ public class listapacientes extends FirestoreRecyclerAdapter<contenido_lista, li
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView txtNombre;
-        TextView txtID;
+        TextView txtEstado;
 
         Button buttonVer;
-        Button buttunBorrar;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            txtID = itemView.findViewById(R.id.txtID);
+            txtEstado = itemView.findViewById(R.id.txtEstado);
             txtNombre = itemView.findViewById(R.id.txtNombre);
 
             buttonVer = itemView.findViewById(R.id.btnVer);
-            /*buttunBorrar = itemView.findViewById(R.id.btnEiminar);*/
 
         }
 
