@@ -42,6 +42,7 @@ public class listapacientes extends FirestoreRecyclerAdapter<contenido_lista, li
     @Override
     protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull contenido_lista articulo) {
         DocumentSnapshot PacienteListas = getSnapshots().getSnapshot(holder.getAdapterPosition());
+
         final String id = PacienteListas.getId();
 
         holder.txtNombre.setText(articulo.getNombre());
