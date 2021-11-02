@@ -1,6 +1,7 @@
 package java.hospital.sifampi;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -56,6 +57,10 @@ public class Familia extends AppCompatActivity {
 
         fStore = FirebaseFirestore.getInstance();
         fAuth = FirebaseAuth.getInstance();
+
+        //Boton de retroceso
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         obtenerdatos();
 
